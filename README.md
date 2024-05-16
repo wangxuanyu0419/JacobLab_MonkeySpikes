@@ -16,15 +16,15 @@ In the dataset I share with you, the spike timestamps of all sorted units are su
 | Field | Explanation |
 | ----- | ----- |
 | FileName | `R120410`: `R` or `W` refers to the two monkeys; `120410` is the date for that recording session, thus marking one specific session of a monkey. Note that the recording is done acutely therefore all recording sessions are independent of each other. |
-| EventCodes | All behavior events throughout the whole session, check the [event code section](##event-codes) below for more detail. ⚠️ This is not trial segmented. |
+| EventCodes | All behavior events throughout the whole session, check the [event code section](#event-codes) below for more detail. ⚠️ This is not trial segmented. |
 | EventTimes | The timestamps for every `EventCodes` corresponding to the field above. Unit: seconds. |
 | TrialStartInd | The indices for trial starts, or first event for every trial. For the example session, there are 827 trials (**including invalid**). You will locate the triplet starting timestamp (`EventCode = [9 9 9]`) in the `EventCodes` |
 | TrialEndInd | Similar to the field `TrialStartInd`, mark the last event in each trial. `EventCode = [18 18 18]` |
 | TrialStartTime | The absolute time of the session for the onset of each trial. |
 | TrialEndTime | The absolute time of trial ends. |
 | TrialConditions | The condition codes used in MonkeyLogic, not very helpful for you. |
-| TrialResponseCodes | ❗ The Sample-Distractor-Test1-Condition for each trial. `0` marks incomplete trials (e.g., trial 1), `2021` (trial 4) means `Sample = 2`; `Distractor = 0` (i.e. no distractor); `Test1 = 2` thus the first test is already a match and monkey should response; if `Test1 != Sample`, then the second test will be equal to the sample, but not labeled in the response code; `Condition = 1` means visual feature controlled stimulus was used, not relevant for you. See [Response Codes section](##response-codes) for more detail. |
-| TrialResponseErrors | ❗ The outcome of each trial, correct/error/missing/invalid, etc. See [Error Codes section](##error-codes) for more detail. |
+| TrialResponseCodes | ❗ The Sample-Distractor-Test1-Condition for each trial. `0` marks incomplete trials (e.g., trial 1), `2021` (trial 4) means `Sample = 2`; `Distractor = 0` (i.e. no distractor); `Test1 = 2` thus the first test is already a match and monkey should response; if `Test1 != Sample`, then the second test will be equal to the sample, but not labeled in the response code; `Condition = 1` means visual feature controlled stimulus was used, not relevant for you. See [Response Codes section](#response-codes) for more detail. |
+| TrialResponseErrors | ❗ The outcome of each trial, correct/error/missing/invalid, etc. See [Error Codes section](#error-codes) for more detail. |
 | NeuronName | The number of sorted units in this session. They were named `sig00Xa/b/c`: for the example session, `sig002a` labels the neuron that was recorded from channel `2`, and is the only one in this channel. if both `a` and `b` exist, then two neurons were recorded in this channel. |
 | SpikeData | ❗ The spike timestamps for each sorted unit. ⚠️ Not trial segmented, use the `TrialStartTime` and `TrialEndTime` to determine when in each trial the spikes occurred. |
 | Electrodes | Not relevant. |
