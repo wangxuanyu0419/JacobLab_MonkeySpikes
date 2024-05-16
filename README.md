@@ -2,6 +2,12 @@
 This repo provides a walkthrough for the sorted unit dataset from Monkey frontoparietal cortex during a numerical working memory task.
 ![Intro](./General/Figures/Intro.png)
 
+# List of publications
+Here are the publicated work that are based on this dataset:
+- [Jacob, S. N., & Nieder, A. (2014). Complementary roles for primate frontal and parietal cortex in guarding working memory from distractor stimuli. Neuron, 83(1), 226-237.](https://doi.org/10.1016/j.neuron.2014.05.009)
+- [Jacob, S. N., Hähnke, D., & Nieder, A. (2018). Structuring of abstract working memory content by fronto-parietal synchrony in primate cortex. Neuron, 99(3), 588-597.](https://doi.org/10.1016/j.neuron.2018.07.025)
+- [Lin, X. X., Nieder, A., & Jacob, S. N. (2023). The neuronal implementation of representational geometry in primate prefrontal cortex. Science Advances, 9(50), eadh8685.](https://doi.org/10.1126/sciadv.adh8685)
+
 # Introduction:
 * We trained two rhesus macaque on a delayed-match-to-numerosity task with **1 to 4 dots** as the sample. A task-irrelevant interfering numerosity (1 to 4) was given during the memory delay in 80 % of trials, otherwise, a blank screen with fixation was presented. The behavioral performance of the two monkeys has been reported in detail in our [previous publication](https://www.cell.com/neuron/fulltext/S0896-6273(14)00395-X), showing that both monkeys were able to memorize the sample numerosity despite the interference.
 * For the recording, four pairs of electrodes were inserted acutely through selected wells on surgically fixated chambers over the lateral prefrontal cortex (PFC) and the ventral intraparietal cortex (VIP, see lower-right of the figure above). This means up to 8 electrodes in each region during each recording session. 
